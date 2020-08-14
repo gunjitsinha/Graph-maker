@@ -5,27 +5,27 @@ author = @gunjitsinha
 import matplotlib.pyplot as plt
 import numpy as np
 
-def sine():
-    x = np.arange(-10, 10, 0.1)
-    y = np.sin(x)
-    plt.plot(x, y)
-    plt.title('Sin')
+def formalities():
     plt.xlabel('x axis')
     plt.ylabel('y axis')
     plt.grid(True, which='both')
     plt.axhline(y=0, color='k')
     plt.show()
+    
+def sine():
+    x = np.arange(-10, 10, 0.1)
+    y = np.sin(x)
+    plt.plot(x, y)
+    plt.title('Sin')
+    formalities()
 
 def cosine():
     x = np.arange(-10, 10, 0.1)
     y = np.cos(x)
     plt.plot(x, y)
     plt.title('Cos')
-    plt.xlabel('x axis')
-    plt.ylabel('y axis')
-    plt.grid(True, which='both')
-    plt.axhline(y=0, color='k')
-    plt.show()
+    formalities()
+   
 
 def tangent():
     x = np.arange(-2*np.pi, 2*np.pi, 0.1)
@@ -34,11 +34,8 @@ def tangent():
     plt.ylim(-3, 3)
     plt.plot(x,y)
     plt.title('Tan')
-    plt.xlabel('x axis')
-    plt.ylabel('y axis')
-    plt.grid(True, which='both')
-    plt.axhline(y=0, color='k')
-    plt.show()
+    formalities()
+    
 
 def cotangent():
     x = np.arange(-2 * np.pi, 2 * np.pi, 0.1)
@@ -47,12 +44,5 @@ def cotangent():
     plt.ylim(-3, 3)
     plt.plot(x, y)
     plt.title('Cot')
-    plt.xlabel('x axis')
-    plt.ylabel('y axis')
-    plt.grid(True, which='both')
-    plt.axhline(y=0, color='k')
-    plt.show()
-
-
-
-
+    formalities()
+  
